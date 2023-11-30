@@ -15,8 +15,12 @@ function generatePass()
                 $newpassword .= $newChar;
             }
         }
-        return $newpassword;
+        $_SESSION['password'] = $newpassword;
+        header('Location: index.php');
+        die();
+
     }
+    return false;
 }
 ;
 ?>

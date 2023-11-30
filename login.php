@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . "/partials/header.php";
-$newpassword = generatePass();
-var_dump($newpassword);
+$error = generatePass();
+
 ?>
 
 <main class="container">
