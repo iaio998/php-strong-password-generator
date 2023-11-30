@@ -18,7 +18,6 @@ function generatePass()
         $_SESSION['password'] = $newpassword;
         header('Location: index.php');
         die();
-
     }
     return false;
 }

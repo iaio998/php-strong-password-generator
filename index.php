@@ -13,7 +13,7 @@ if (empty($_SESSION['password'])) {
         <?php echo $_SESSION['password'] ?>
     </div>
     <form action="logout.php">
-        <button type="submit">Logout</button>
+        <button class="btn btn-danger mt-5" type="submit">Logout</button>
     </form>
 
 </main>

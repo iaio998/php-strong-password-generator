@@ -2,7 +2,7 @@
 
 ?>
 
-<footer class="container py-4">
+<footer class="container">
     <p class="p-0 m-0">Designed by iaio</p>
 </footer>
 
