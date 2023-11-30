@@ -1,6 +1,8 @@
 <?php
-include __DIR__ . "/partials/header.php"
-    ?>
+include __DIR__ . "/partials/header.php";
+$newpassword = generatePass();
+var_dump($newpassword);
+?>
 
 <main class="container">
     <form method="GET" action="<?php echo $_SERVER['PHP_SELF'] ?>">

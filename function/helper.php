@@ -10,8 +10,13 @@ function generatePass()
         $newpassword = '';
         while (strlen($newpassword) < $pwLenght) {
             $list = $symbols . $letters . $upLetters . $numbers;
-
+            $newChar = $list[rand(0, strlen($list) - 1)];
+            if (!strpos($newpassword, $newChar)) {
+                $newpassword .= $newChar;
+            }
         }
+        return $newpassword;
     }
+
 }
 ?>
